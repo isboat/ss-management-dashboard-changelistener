@@ -1,0 +1,2492 @@
+{
+  "packageGovernance": {
+    "totalDistinctPackages": 3,
+    "totalVersionDriftInstances": 0,
+    "targetFramework": "net8.0",
+    "packages": [
+      {
+        "name": "Microsoft.Azure.WebJobs.Extensions.ServiceBus",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "NuGet package functionality is included with framework reference",
+        "versions": [
+          {
+            "version": "5.13.3",
+            "projects": [
+              "Management.Dashboard.ChangeListener"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.Azure.WebJobs.Extensions.SignalRService",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "Needs to be replaced with Replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService=1.14.1",
+        "versions": [
+          {
+            "version": "1.2.0",
+            "projects": [
+              "Management.Dashboard.ChangeListener"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      },
+      {
+        "name": "Microsoft.NET.Sdk.Functions",
+        "totalProjectCount": 1,
+        "distinctVersionCount": 1,
+        "recommendedVersion": "",
+        "isCompatible": true,
+        "description": "Needs to be replaced with Replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http=3.3.0;Microsoft.Azure.Functions.Worker.Sdk=1.18.1;Microsoft.Azure.Functions.Worker=1.24.0",
+        "versions": [
+          {
+            "version": "4.2.0",
+            "projects": [
+              "Management.Dashboard.ChangeListener"
+            ],
+            "isRecommended": false
+          }
+        ],
+        "upgrade": {
+          "newVersion": ""
+        }
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Management.Dashboard.ChangeListener",
+      "path": "Management.Dashboard.ChangeListener.csproj",
+      "isSdk": true,
+      "currentFrameworks": [
+        "net6.0"
+      ],
+      "targetFramework": "net8.0",
+      "dependencies": {
+        "packages": [
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions.ServiceBus",
+            "version": "5.13.3",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "Management.Dashboard.ChangeListener.csproj"
+              }
+            ],
+            "description": "NuGet package functionality is included with framework reference",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions.SignalRService",
+            "version": "1.2.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "Management.Dashboard.ChangeListener.csproj"
+              }
+            ],
+            "description": "Needs to be replaced with Replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService=1.14.1",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          },
+          {
+            "name": "Microsoft.NET.Sdk.Functions",
+            "version": "4.2.0",
+            "isTransitive": false,
+            "isGlobal": false,
+            "isImplicit": false,
+            "definedIn": [
+              {
+                "path": "Management.Dashboard.ChangeListener.csproj"
+              }
+            ],
+            "description": "Needs to be replaced with Replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http=3.3.0;Microsoft.Azure.Functions.Worker.Sdk=1.18.1;Microsoft.Azure.Functions.Worker=1.24.0",
+            "compatibility": "valid",
+            "recommendedVersion": ""
+          }
+        ],
+        "assemblies": [
+          {
+            "name": "System.Text.RegularExpressions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Text.RegularExpressions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.IdentityModel.Tokens",
+            "version": "5.5.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.identitymodel.tokens\\5.5.0\\lib\\netstandard2.0\\Microsoft.IdentityModel.Tokens.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.Kestrel.Core",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Windows",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Windows.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Connections.Client",
+            "version": "3.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\3.0.0\\lib\\netstandard2.1\\Microsoft.AspNetCore.Http.Connections.Client.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.SignalR.Management",
+            "version": "1.4.1.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.signalr.management\\1.4.1\\lib\\netcoreapp3.0\\Microsoft.Azure.SignalR.Management.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Numerics.Vectors",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Numerics.Vectors.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Options.DataAnnotations",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Options.DataAnnotations.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.Linq",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.Linq.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Localization",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Localization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Encoding.CodePages",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Text.Encoding.CodePages.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.Debug",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.Debug.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Hosting",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Hosting.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ComponentModel.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authentication.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authentication.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Claims",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Claims.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.Binder",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.Binder.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Hosting.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Globalization.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Globalization.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Resources.ResourceManager",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Resources.ResourceManager.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Pipes",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Pipes.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.Console",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.Console.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Serialization.Formatters",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Serialization.Formatters.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.Process",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.Process.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.XmlSerializer",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.XmlSerializer.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.CommandLine",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.CommandLine.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Memory",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Memory.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.ReaderWriter",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.ReaderWriter.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Core",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Azure.Identity",
+            "version": "1.7.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\azure.identity\\1.7.0\\lib\\netstandard2.0\\Azure.Identity.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.SignalR.Core",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.SignalR.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.TraceSource",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.TraceSource.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.Encoding",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.Encoding.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Json",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Text.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.IdentityModel.JsonWebTokens",
+            "version": "5.5.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.5.0\\lib\\netstandard2.0\\Microsoft.IdentityModel.JsonWebTokens.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Win32.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Win32.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Grpc.AspNetCore.Server.ClientFactory",
+            "version": "2.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\grpc.aspnetcore.server.clientfactory\\2.49.0\\lib\\net6.0\\Grpc.AspNetCore.Server.ClientFactory.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.FileSystem.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.FileSystem.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Core",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Memory.Data",
+            "version": "1.0.2.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\system.memory.data\\1.0.2\\lib\\netstandard2.0\\System.Memory.Data.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.Xml",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.Xml.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.ServicePoint",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.ServicePoint.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.InteropServices",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.InteropServices.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Tasks.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Tasks.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Http",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Http.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel.EventBasedAsync",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ComponentModel.EventBasedAsync.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Timer",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Timer.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.WebApiCompatShim",
+            "version": "2.2.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.aspnetcore.mvc.webapicompatshim\\2.2.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.Mvc.WebApiCompatShim.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.SignalR.Protocols.MessagePack",
+            "version": "1.1.5.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.messagepack\\1.1.5\\lib\\netstandard2.0\\Microsoft.AspNetCore.SignalR.Protocols.MessagePack.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.DataProtection.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.DataProtection.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Azure",
+            "version": "1.6.3.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.extensions.azure\\1.6.3\\lib\\netstandard2.0\\Microsoft.Extensions.Azure.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.IdentityModel.Logging",
+            "version": "5.5.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.identitymodel.logging\\5.5.0\\lib\\netstandard2.0\\Microsoft.IdentityModel.Logging.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ValueTuple",
+            "version": "4.0.3.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ValueTuple.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.EventSource",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.EventSource.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions.Http",
+            "version": "3.2.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.extensions.http\\3.2.0\\lib\\netstandard2.0\\Microsoft.Azure.WebJobs.Extensions.Http.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Handles",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Handles.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.IIS",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.IIS.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Diagnostics.HealthChecks",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Identity.Core",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Identity.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.FileProviders.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.FileProviders.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Razor",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Razor.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel.TypeConverter",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ComponentModel.TypeConverter.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Razor",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Razor.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.SignalR.Common",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.SignalR.Common.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.SignalR.Serverless.Protocols",
+            "version": "1.2.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.signalr.serverless.protocols\\1.2.0\\lib\\netstandard2.0\\Microsoft.Azure.SignalR.Serverless.Protocols.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs",
+            "version": "3.0.37.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.core\\3.0.37\\lib\\netstandard2.0\\Microsoft.Azure.WebJobs.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Net.Http.Headers",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Net.Http.Headers.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.TagHelpers",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.DispatchProxy",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.DispatchProxy.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Newtonsoft.Json",
+            "version": "13.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib\\netstandard2.0\\Newtonsoft.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Pipes.AccessControl",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Pipes.AccessControl.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Linq.Queryable",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Linq.Queryable.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.TypeExtensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.TypeExtensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.Configuration",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.Configuration.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.SecureString",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.SecureString.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.AppContext",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.AppContext.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Host.Storage",
+            "version": "3.0.14.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.host.storage\\3.0.14\\lib\\netstandard2.0\\Microsoft.Azure.WebJobs.Host.Storage.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.DotNet.PlatformAbstractions",
+            "version": "2.1.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\lib\\netstandard1.3\\Microsoft.DotNet.PlatformAbstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.IsolatedStorage",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.IsolatedStorage.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Features",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.Features.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Dynamic.Runtime",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Dynamic.Runtime.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.XDocument",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.XDocument.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Serialization.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Serialization.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.CSharp",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.CSharp.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Win32.Registry",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Win32.Registry.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Collections",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Collections.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.NetworkInformation",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.NetworkInformation.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Cors",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Cors.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Serialization.Xml",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Serialization.Xml.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.WebSockets",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.WebSockets.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Localization",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Localization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.VisualBasic.Core",
+            "version": "11.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.VisualBasic.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Serialization",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Serialization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Web.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.Amqp",
+            "version": "2.4.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.amqp\\2.6.3\\lib\\netstandard2.0\\Microsoft.Azure.Amqp.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "MessagePack",
+            "version": "1.9.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\messagepack\\1.9.11\\lib\\netstandard2.0\\MessagePack.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Compression.FileSystem",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Compression.FileSystem.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authentication",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authentication.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.Tools",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.Tools.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.UserSecrets",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.UserSecrets.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Hosting.Server.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.FileSystem.AccessControl",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.FileSystem.AccessControl.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Drawing.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Drawing.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Principal",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Principal.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Tasks.Parallel",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Tasks.Parallel.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Rpc.Core",
+            "version": "3.0.37.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.rpc.core\\3.0.37\\lib\\net6.0\\Microsoft.Azure.WebJobs.Rpc.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data.DataSetExtensions",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Data.DataSetExtensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Hosting",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Hosting.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Drawing",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Drawing.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Channels",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Channels.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Http",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Http.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Requests",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Requests.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Web.HttpUtility",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Web.HttpUtility.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Principal.Windows",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Principal.Windows.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.HttpLogging",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.HttpLogging.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions.ServiceBus",
+            "version": "5.13.3.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.extensions.servicebus\\5.13.3\\lib\\net6.0\\Microsoft.Azure.WebJobs.Extensions.ServiceBus.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.Xml",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.Xml.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.HostFiltering",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.HostFiltering.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.AccessControl",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.AccessControl.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.RazorPages",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.RazorPages.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Transactions",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Transactions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "mscorlib",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\mscorlib.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.SignalR",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.SignalR.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Intrinsics",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Intrinsics.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Features",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Features.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Numerics",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Numerics.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Collections.Specialized",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Collections.Specialized.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.DataProtection",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.DataProtection.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.FileVersionInfo",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.FileVersionInfo.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authorization.Policy",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authorization.Policy.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Http.Formatting",
+            "version": "5.2.8.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.8\\lib\\netstandard2.0\\System.Net.Http.Formatting.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.EventLog",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.EventLog.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Connections.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Connections.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.VisualBasic",
+            "version": "10.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.VisualBasic.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.StaticFiles",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.StaticFiles.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Collections.Immutable",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Collections.Immutable.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Metadata",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Metadata.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.Debug",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.Debug.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Host",
+            "version": "3.0.37.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs\\3.0.37\\lib\\netstandard2.0\\Microsoft.Azure.WebJobs.Host.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Formats.Asn1",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Formats.Asn1.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.DependencyInjection",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.DependencyInjection.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Connections",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.Connections.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.SignalR.Common",
+            "version": "1.4.1.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.signalr.management\\1.4.1\\lib\\netcoreapp3.0\\Microsoft.Azure.SignalR.Common.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.XPath",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.XPath.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.Metadata",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.Metadata.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Tasks",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Tasks.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Diagnostics.HealthChecks.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.ResponseCaching",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.ResponseCaching.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.IISIntegration",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.IISIntegration.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Routing.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Routing.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authentication.Core",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authentication.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.HttpListener",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.HttpListener.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.Json",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Diagnostics.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel.Annotations",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ComponentModel.Annotations.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Bcl.AsyncInterfaces",
+            "version": "1.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\ref\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.KeyPerFile",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.KeyPerFile.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.XmlDocument",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.XmlDocument.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.FileProviders.Composite",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.FileProviders.Composite.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ComponentModel.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.Emit",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.Emit.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.UnmanagedMemoryStream",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.UnmanagedMemoryStream.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Localization",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Localization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Options",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Options.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Collections.NonGeneric",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Collections.NonGeneric.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions.SignalRService",
+            "version": "1.2.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.extensions.signalrservice\\1.2.0\\lib\\netstandard2.0\\Microsoft.Azure.WebJobs.Extensions.SignalRService.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Caching.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Caching.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authentication.Cookies",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authentication.Cookies.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Rewrite",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Rewrite.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Resources.Reader",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Resources.Reader.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data.Common",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Data.Common.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.Kestrel.Transport.Quic",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Identity.Stores",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Identity.Stores.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.Csp",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.Csp.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Components.Authorization",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Components.Authorization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Linq",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Linq.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.ApiExplorer",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.Algorithms",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.Algorithms.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Grpc.AspNetCore.Server",
+            "version": "2.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\grpc.aspnetcore.server\\2.49.0\\lib\\net6.0\\Grpc.AspNetCore.Server.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.SignalR",
+            "version": "1.4.1.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.signalr\\1.4.1\\lib\\netcoreapp3.0\\Microsoft.Azure.SignalR.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.ResponseCaching.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.StackTrace",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.StackTrace.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ServiceProcess",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ServiceProcess.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.Tracing",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.Tracing.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Globalization.Calendars",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Globalization.Calendars.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.HttpSys",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.HttpSys.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.Kestrel",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.Kestrel.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Session",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Session.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Identity",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Identity.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Cryptography.KeyDerivation",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.DiagnosticSource",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.DiagnosticSource.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Serialization.Json",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Serialization.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.JsonPatch",
+            "version": "2.2.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\2.2.0\\lib\\netstandard2.0\\Microsoft.AspNetCore.JsonPatch.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authorization",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authorization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Pipelines",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Pipelines.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Diagnostics",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Diagnostics.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Sockets",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Sockets.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ObjectModel",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ObjectModel.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Caching.Memory",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Caching.Memory.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.MemoryMappedFiles",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.MemoryMappedFiles.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Tasks.Dataflow",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Tasks.Dataflow.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.Emit.Lightweight",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.Emit.Lightweight.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Azure.Messaging.ServiceBus",
+            "version": "7.16.2.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\azure.messaging.servicebus\\7.16.2\\lib\\netstandard2.0\\Azure.Messaging.ServiceBus.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.FileSystem.DriveInfo",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.FileSystem.DriveInfo.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.Cng",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.Cng.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Identity.Client.Extensions.Msal",
+            "version": "2.19.3.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\2.19.3\\lib\\netcoreapp2.1\\Microsoft.Identity.Client.Extensions.Msal.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Localization.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Localization.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.ProtectedData",
+            "version": "4.0.5.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\ref\\netstandard2.0\\System.Security.Cryptography.ProtectedData.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Components.Server",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Components.Server.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions.Rpc",
+            "version": "3.0.37.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.extensions.rpc\\3.0.37\\lib\\net6.0\\Microsoft.Azure.WebJobs.Extensions.Rpc.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.WebUtilities",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.WebUtilities.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Grpc.Net.Client",
+            "version": "2.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\grpc.net.client\\2.49.0\\lib\\net6.0\\Grpc.Net.Client.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.XPath.XDocument",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.XPath.XDocument.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.HttpsPolicy",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.HttpsPolicy.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Linq.Parallel",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Linq.Parallel.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Globalization",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Globalization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.WebProxy",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.WebProxy.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Console",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Console.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Configuration",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Configuration.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Encoding.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Text.Encoding.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Azure.Core.Amqp",
+            "version": "1.3.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\azure.core.amqp\\1.3.0\\lib\\netstandard2.0\\Azure.Core.Amqp.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.ResponseCompression",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.ResponseCompression.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.WebHeaderCollection",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.WebHeaderCollection.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Ping",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Ping.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.FileSystem.Watcher",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.FileSystem.Watcher.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Connections.Common",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.Connections.Common.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.CompilerServices.Unsafe",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.CompilerServices.Unsafe.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Mail",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Mail.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.Ini",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.Ini.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.WindowsAzure.Storage",
+            "version": "9.3.1.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\windowsazure.storage\\9.3.1\\lib\\netstandard1.3\\Microsoft.WindowsAzure.Storage.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ServiceModel.Web",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ServiceModel.Web.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Grpc.Net.Common",
+            "version": "2.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\grpc.net.common\\2.49.0\\lib\\net6.0\\Grpc.Net.Common.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Http.Json",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Http.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Encoding",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Text.Encoding.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Transactions.Local",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Transactions.Local.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Security",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Security.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Azure.Core",
+            "version": "1.35.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\azure.core\\1.35.0\\lib\\net6.0\\Azure.Core.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Grpc.Net.ClientFactory",
+            "version": "2.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\grpc.net.clientfactory\\2.49.0\\lib\\net6.0\\Grpc.Net.ClientFactory.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Configuration.FileExtensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Configuration.FileExtensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.SignalR.Protocols.Json",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Logging.TraceSource",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Logging.TraceSource.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.EventLog",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.EventLog.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Buffers",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Buffers.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Razor.Runtime",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Razor.Runtime.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.WebEncoders",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.WebEncoders.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Linq.Expressions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Linq.Expressions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Newtonsoft.Json.Bson",
+            "version": "1.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\lib\\netstandard1.3\\Newtonsoft.Json.Bson.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "WindowsBase",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\WindowsBase.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Xml.Serialization",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Xml.Serialization.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Cors",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Cors.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.WebClient",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.WebClient.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Formatters.Xml",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.WebJobs.Extensions",
+            "version": "3.0.6.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.webjobs.extensions\\3.0.6\\lib\\netstandard2.0\\Microsoft.Azure.WebJobs.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Routing",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Routing.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Cryptography.Internal",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Cryptography.Internal.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Html.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Html.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.DataAnnotations",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Data",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Data.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.DataProtection.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Thread",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Thread.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.Overlapped",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.Overlapped.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.Functions.Extensions",
+            "version": "1.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.functions.extensions\\1.0.0\\lib\\netstandard2.0\\Microsoft.Azure.Functions.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Loader",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Loader.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.CookiePolicy",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.CookiePolicy.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Text.Encodings.Web",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Text.Encodings.Web.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.Contracts",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.Contracts.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Authentication.OAuth",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Authentication.OAuth.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Compression.ZipFile",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Compression.ZipFile.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Resources.Writer",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Resources.Writer.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.WebSockets",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.WebSockets.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.FileProviders.Physical",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.FileProviders.Physical.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.DependencyModel",
+            "version": "2.1.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.extensions.dependencymodel\\2.1.0\\lib\\netstandard1.6\\Microsoft.Extensions.DependencyModel.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.WebSockets.Client",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.WebSockets.Client.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.FileSystemGlobbing",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.FileSystemGlobbing.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Compression",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Compression.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Components.Forms",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Numerics",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Numerics.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.ObjectPool",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.ObjectPool.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Antiforgery",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Antiforgery.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Http.Results",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Http.Results.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "netstandard",
+            "version": "2.1.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\netstandard.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.Extensions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.Extensions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Formatters.Json",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Formatters.Json.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.ViewFeatures",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.ViewFeatures.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Azure.SignalR.Protocols",
+            "version": "1.4.1.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.azure.signalr.protocols\\1.4.1\\lib\\netstandard2.0\\Microsoft.Azure.SignalR.Protocols.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Collections.Concurrent",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Collections.Concurrent.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Threading.ThreadPool",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Threading.ThreadPool.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.OpenSsl",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.OpenSsl.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Components.Web",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Components.Web.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Components",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Components.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IdentityModel.Tokens.Jwt",
+            "version": "5.5.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\system.identitymodel.tokens.jwt\\5.5.0\\lib\\netstandard2.0\\System.IdentityModel.Tokens.Jwt.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "NCrontab.Signed",
+            "version": "3.2.20120.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\ncrontab.signed\\3.3.0\\lib\\netstandard1.0\\NCrontab.Signed.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Primitives",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Primitives.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.ComponentModel.DataAnnotations",
+            "version": "4.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.ComponentModel.DataAnnotations.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Security.Cryptography.X509Certificates",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Security.Cryptography.X509Certificates.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.Hosting.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.Hosting.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Localization.Routing",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Localization.Routing.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.HttpOverrides",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.HttpOverrides.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Identity.Client",
+            "version": "4.39.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\microsoft.identity.client\\4.39.0\\lib\\netcoreapp2.1\\Microsoft.Identity.Client.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.Compression.Brotli",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.Compression.Brotli.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.AspNetCore.Mvc.Abstractions",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.AspNetCore.Mvc.Abstractions.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Google.Protobuf",
+            "version": "3.24.3.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\google.protobuf\\3.24.3\\lib\\net5.0\\Google.Protobuf.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.IO.FileSystem",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.IO.FileSystem.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Diagnostics.TextWriterTraceListener",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Diagnostics.TextWriterTraceListener.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.JSInterop",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.JSInterop.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Reflection.Emit.ILGeneration",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Reflection.Emit.ILGeneration.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.InteropServices.RuntimeInformation",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.InteropServices.RuntimeInformation.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Grpc.Core.Api",
+            "version": "2.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Users\\isboa\\.nuget\\packages\\grpc.core.api\\2.49.0\\lib\\netstandard2.1\\Grpc.Core.Api.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "Microsoft.Extensions.FileProviders.Embedded",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\6.0.36\\ref\\net6.0\\Microsoft.Extensions.FileProviders.Embedded.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Net.NameResolution",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Net.NameResolution.dll",
+            "compatibility": "valid"
+          },
+          {
+            "name": "System.Runtime.CompilerServices.VisualC",
+            "version": "6.0.0.0",
+            "isTransitive": true,
+            "physicalPath": "C:\\Program Files\\dotnet\\packs\\Microsoft.NETCore.App.Ref\\6.0.36\\ref\\net6.0\\System.Runtime.CompilerServices.VisualC.dll",
+            "compatibility": "valid"
+          }
+        ],
+        "projectReferences": [],
+        "frameworkReferences": []
+      }
+    }
+  ]
+}
