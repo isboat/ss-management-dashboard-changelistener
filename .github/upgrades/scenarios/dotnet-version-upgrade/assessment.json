@@ -1,0 +1,256 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net8.0",
+    "targetDisplayName": ".NETCoreApp,Version=v8.0"
+  },
+  "analysisStartTime": "2026-07-20T19:15:30.1327988Z",
+  "analysisEndTime": "2026-07-20T19:15:32.3486892Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 4,
+      "incidents": 6,
+      "effort": 8
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 4,
+        "Optional": 0,
+        "Potential": 2,
+        "Information": 0
+      },
+      "category": {
+        "AzureFunctionsUpgrade": 1,
+        "NuGet": 4,
+        "Project": 1
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "Management.Dashboard.ChangeListener.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 8,
+      "properties": {
+        "appName": "Management.Dashboard.ChangeListener",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net6.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 2,
+        "numberOfCodeFiles": 2,
+        "linesTotal": 49,
+        "linesOfCode": 49,
+        "totalApiScanned": 29,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "1785d0d0-e14e-4557-9d3d-268579f64c89",
+          "ruleId": "AzureFunctionsUpgrade.0002",
+          "projectPath": "Management.Dashboard.ChangeListener.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "Management.Dashboard.ChangeListener.csproj"
+          }
+        },
+        {
+          "incidentId": "a7d6bc05-03b5-4045-9a9d-2ff519996fd3",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Management.Dashboard.ChangeListener.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nRemove Microsoft.Azure.WebJobs.Extensions.SignalRService, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService 1.14.1",
+              "protected": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nRemove Microsoft.Azure.WebJobs.Extensions.SignalRService, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService 1.14.1"
+            },
+            "kind": "File",
+            "path": "Management.Dashboard.ChangeListener.csproj",
+            "snippet": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nRemove Microsoft.Azure.WebJobs.Extensions.SignalRService, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService 1.14.1",
+            "protectedSnippet": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nRemove Microsoft.Azure.WebJobs.Extensions.SignalRService, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService 1.14.1",
+            "label": "Microsoft.Azure.WebJobs.Extensions.SignalRService 1.2.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.WebJobs.Extensions.SignalRService",
+              "PackageVersion": "1.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package Microsoft.Azure.Functions.Worker.Extensions.SignalRService=1.14.1"
+            }
+          }
+        },
+        {
+          "incidentId": "d4e0a829-4a42-4128-b6b1-fb79fe063cca",
+          "ruleId": "NuGet.0002",
+          "projectPath": "Management.Dashboard.ChangeListener.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.NET.Sdk.Functions, 4.2.0\n\nRecommendation:\n\nRemove Microsoft.NET.Sdk.Functions, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http 3.3.0,\nMicrosoft.Azure.Functions.Worker.Sdk 1.18.1,\nMicrosoft.Azure.Functions.Worker 1.24.0",
+              "protected": "Microsoft.NET.Sdk.Functions, 4.2.0\n\nRecommendation:\n\nRemove Microsoft.NET.Sdk.Functions, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http 3.3.0,\nMicrosoft.Azure.Functions.Worker.Sdk 1.18.1,\nMicrosoft.Azure.Functions.Worker 1.24.0"
+            },
+            "kind": "File",
+            "path": "Management.Dashboard.ChangeListener.csproj",
+            "snippet": "Microsoft.NET.Sdk.Functions, 4.2.0\n\nRecommendation:\n\nRemove Microsoft.NET.Sdk.Functions, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http 3.3.0,\nMicrosoft.Azure.Functions.Worker.Sdk 1.18.1,\nMicrosoft.Azure.Functions.Worker 1.24.0",
+            "protectedSnippet": "Microsoft.NET.Sdk.Functions, 4.2.0\n\nRecommendation:\n\nRemove Microsoft.NET.Sdk.Functions, and replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http 3.3.0,\nMicrosoft.Azure.Functions.Worker.Sdk 1.18.1,\nMicrosoft.Azure.Functions.Worker 1.24.0",
+            "label": "Microsoft.NET.Sdk.Functions 4.2.0",
+            "properties": {
+              "PackageId": "Microsoft.NET.Sdk.Functions",
+              "PackageVersion": "4.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": "Replace with new package Microsoft.Azure.Functions.Worker.Extensions.Http=3.3.0;Microsoft.Azure.Functions.Worker.Sdk=1.18.1;Microsoft.Azure.Functions.Worker=1.24.0"
+            }
+          }
+        },
+        {
+          "incidentId": "8f11a7d5-5595-468f-b5f1-0de171834cb4",
+          "ruleId": "Project.0002",
+          "projectPath": "Management.Dashboard.ChangeListener.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Current target framework: net6.0\nRecommended target framework: net8.0",
+              "protected": "Current target framework: net6.0\nRecommended target framework: net8.0"
+            },
+            "kind": "File",
+            "path": "Management.Dashboard.ChangeListener.csproj",
+            "snippet": "Current target framework: net6.0\nRecommended target framework: net8.0",
+            "protectedSnippet": "Current target framework: net6.0\nRecommended target framework: net8.0",
+            "properties": {
+              "CurrentTargetFramework": "net6.0",
+              "RecommendedTargetFramework": "net8.0"
+            }
+          }
+        },
+        {
+          "incidentId": "70536d26-ee72-4c34-8531-d47491b5a337",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Management.Dashboard.ChangeListener.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.WebJobs.Extensions.ServiceBus, 5.13.3\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.Azure.WebJobs.Extensions.ServiceBus, 5.13.3\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Management.Dashboard.ChangeListener.csproj",
+            "snippet": "Microsoft.Azure.WebJobs.Extensions.ServiceBus, 5.13.3\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.Azure.WebJobs.Extensions.ServiceBus, 5.13.3\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.Azure.WebJobs.Extensions.ServiceBus 5.13.3",
+            "properties": {
+              "PackageId": "Microsoft.Azure.WebJobs.Extensions.ServiceBus",
+              "PackageVersion": "5.13.3",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "6e51e2aa-2569-476b-b436-5dd199eefe25",
+          "ruleId": "NuGet.0003",
+          "projectPath": "Management.Dashboard.ChangeListener.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+              "protected": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference"
+            },
+            "kind": "File",
+            "path": "Management.Dashboard.ChangeListener.csproj",
+            "snippet": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "protectedSnippet": "Microsoft.Azure.WebJobs.Extensions.SignalRService, 1.2.0\n\nRecommendation:\n\nPackage functionality included with new framework reference",
+            "label": "Microsoft.Azure.WebJobs.Extensions.SignalRService 1.2.0",
+            "properties": {
+              "PackageId": "Microsoft.Azure.WebJobs.Extensions.SignalRService",
+              "PackageVersion": "1.2.0",
+              "PackageNewVersion": null,
+              "PackageReplacements": null
+            }
+          }
+        }
+      ],
+      "features": []
+    }
+  ],
+  "rules": {
+    "AzureFunctionsUpgrade.0002": {
+      "id": "AzureFunctionsUpgrade.0002",
+      "isFeature": true,
+      "description": "When migrating from in-proc to isolated, enable the use of the V2 model for Azure Functions projects and enable Application Insights.",
+      "label": "Enable the use of the V2 model for Azure Functions projects and enable Application Insights.",
+      "severity": "Mandatory",
+      "effort": 3,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2342114",
+          "isCustom": false
+        },
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341915",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "NuGet package upgrade is recommended for selected target framework.\n\nStandard .NET packages are recommended to have versions matching version of .NET that project targets.\n\nSome other packages also are known to work better for selected target frameworks.",
+      "label": "NuGet package upgrade is recommended",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to corresponding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in modern .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0003": {
+      "id": "NuGet.0003",
+      "isFeature": false,
+      "description": "NuGet package functionality is included with framework reference.\n\nPackage needs to be removed.",
+      "label": "NuGet package functionality is included with framework reference",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262609",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
