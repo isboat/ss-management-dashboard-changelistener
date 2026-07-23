@@ -7,7 +7,6 @@ namespace Management.Dashboard.ChangeListener;
 
 public class QueueBroadcastFunction
 {
-    private const int PayloadPreviewLength = 128;
     private readonly ILogger<QueueBroadcastFunction> _logger;
 
     public QueueBroadcastFunction(ILogger<QueueBroadcastFunction> logger)
@@ -16,29 +15,27 @@ public class QueueBroadcastFunction
     }
 
     [Function("queueBroadcast")]
-    [SignalROutput(HubName = "ChangeListenerHub")]
+    [SignalROutput(HubName = SignalRConstants.HubName)]
     public SignalRMessageAction Run(
         [ServiceBusTrigger("%QueueName%", Connection = "ServiceBusConnectionString")] ServiceBusReceivedMessage message)
     {
         var payload = message.Body.ToString();
 
+        if (string.IsNullOrWhiteSpace(payload))
+        {
+            throw new InvalidOperationException(
+                $"Service Bus message '{message.MessageId}' has an empty body and cannot be broadcast.");
+        }
+
         _logger.LogInformation(
-            "Broadcasting Service Bus message {MessageId} from sequence {SequenceNumber}. Payload length: {PayloadLength}. Preview: {PayloadPreview}",
+            "Broadcasting Service Bus message {MessageId} from sequence {SequenceNumber}. Payload length: {PayloadLength}",
             message.MessageId,
             message.SequenceNumber,
-            payload.Length,
-            GetPayloadPreview(payload));
+            payload.Length);
 
-        return new SignalRMessageAction("notify")
+        return new SignalRMessageAction(SignalRConstants.NotifyTarget)
         {
             Arguments = [payload]
         };
-    }
-
-    private static string GetPayloadPreview(string payload)
-    {
-        return payload.Length <= PayloadPreviewLength
-            ? payload
-            : string.Concat(payload.AsSpan(0, PayloadPreviewLength), "...");
     }
 }

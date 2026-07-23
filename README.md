@@ -50,11 +50,11 @@ Azure Service Bus queue -> queueBroadcast function -> Azure SignalR Service -> d
 
 ## Message contract
 
-The current broadcast contract preserves the incoming Service Bus message body and sends it as the first argument to the SignalR `notify` target.
+The current broadcast contract preserves non-empty incoming Service Bus message bodies and sends the body as the first argument to the SignalR `notify` target.
 
-Future changes should introduce an explicit JSON DTO and validation before broadcasting if the payload shape becomes owned by this service.
+Future changes should introduce an explicit JSON DTO and schema validation before broadcasting if the payload shape becomes owned by this service.
 
 ## Security notes
 
 - The `negotiate` endpoint is currently anonymous. Keep it behind appropriate network, gateway, or platform authentication controls if the dashboard is not public.
-- The queue processor logs message metadata and only a short payload preview to avoid writing full message bodies to telemetry.
+- The queue processor logs message metadata and payload length only; it does not log message body contents.
