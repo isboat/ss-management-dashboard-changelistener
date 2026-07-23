@@ -1,18 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.Azure.WebJobs.Extensions.SignalRService;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Http;
+using Microsoft.Azure.Functions.Worker.Extensions.SignalRService;
 
-namespace Management.Dashboard.ChangeListener
+namespace Management.Dashboard.ChangeListener;
+
+public static class NegotiateFunction
 {
-    public static class NegotiateFunction
+    [Function("negotiate")]
+    public static SignalRConnectionInfo Negotiate(
+        [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequestData _,
+        [SignalRConnectionInfoInput(HubName = SignalRConstants.HubName)] SignalRConnectionInfo connectionInfo)
     {
-        [FunctionName("negotiate")]
-        public static SignalRConnectionInfo Negotiate(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post")] HttpRequest req,
-            [SignalRConnectionInfo(HubName = "ChangeListenerHub")] SignalRConnectionInfo connectionInfo)
-        {
-            return connectionInfo;
-        }
+        return connectionInfo;
     }
 }

@@ -1,31 +1,41 @@
-using System;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.SignalRService;
-using Microsoft.Azure.WebJobs.Host;
+using Azure.Messaging.ServiceBus;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Extensions.SignalRService;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
-namespace Management.Dashboard.ChangeListener
+namespace Management.Dashboard.ChangeListener;
+
+public class QueueBroadcastFunction
 {
-    public class QueueBroadcastFunction
-    {
-        [FunctionName("queueBroadcast")]
-        public void Run(
-            [ServiceBusTrigger("%QueueName%", Connection = "ServiceBusConnectionString")]string myQueueItem, 
-            ILogger log,
-            [SignalR(HubName = "ChangeListenerHub")] IAsyncCollector<SignalRMessage> signalRMessages)
-        {
-            log.LogInformation($"C# processed message: {myQueueItem}"); 
+    private readonly ILogger<QueueBroadcastFunction> _logger;
 
-            signalRMessages.AddAsync(
-                new SignalRMessage
-                {
-                    Target = "notify",
-                    Arguments = new[]
-                    {
-                        myQueueItem
-                    }
-                });
+    public QueueBroadcastFunction(ILogger<QueueBroadcastFunction> logger)
+    {
+        _logger = logger;
+    }
+
+    [Function("queueBroadcast")]
+    [SignalROutput(HubName = SignalRConstants.HubName)]
+    public SignalRMessageAction Run(
+        [ServiceBusTrigger("%QueueName%", Connection = "ServiceBusConnectionString")] ServiceBusReceivedMessage message)
+    {
+        var payload = message.Body.ToString();
+
+        if (string.IsNullOrWhiteSpace(payload))
+        {
+            throw new InvalidOperationException(
+                $"Service Bus message '{message.MessageId}' has an empty body and cannot be broadcast.");
         }
+
+        _logger.LogInformation(
+            "Broadcasting Service Bus message {MessageId} from sequence {SequenceNumber}. Payload length: {PayloadLength}",
+            message.MessageId,
+            message.SequenceNumber,
+            payload.Length);
+
+        return new SignalRMessageAction(SignalRConstants.NotifyTarget)
+        {
+            Arguments = [payload]
+        };
     }
 }
