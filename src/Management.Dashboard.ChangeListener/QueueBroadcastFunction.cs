@@ -1,31 +1,44 @@
-using System;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.SignalRService;
-using Microsoft.Azure.WebJobs.Host;
+using Azure.Messaging.ServiceBus;
+using Microsoft.Azure.Functions.Worker;
+using Microsoft.Azure.Functions.Worker.Extensions.SignalRService;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
 
-namespace Management.Dashboard.ChangeListener
+namespace Management.Dashboard.ChangeListener;
+
+public class QueueBroadcastFunction
 {
-    public class QueueBroadcastFunction
-    {
-        [FunctionName("queueBroadcast")]
-        public void Run(
-            [ServiceBusTrigger("%QueueName%", Connection = "ServiceBusConnectionString")]string myQueueItem, 
-            ILogger log,
-            [SignalR(HubName = "ChangeListenerHub")] IAsyncCollector<SignalRMessage> signalRMessages)
-        {
-            log.LogInformation($"C# processed message: {myQueueItem}"); 
+    private const int PayloadPreviewLength = 128;
+    private readonly ILogger<QueueBroadcastFunction> _logger;
 
-            signalRMessages.AddAsync(
-                new SignalRMessage
-                {
-                    Target = "notify",
-                    Arguments = new[]
-                    {
-                        myQueueItem
-                    }
-                });
-        }
+    public QueueBroadcastFunction(ILogger<QueueBroadcastFunction> logger)
+    {
+        _logger = logger;
+    }
+
+    [Function("queueBroadcast")]
+    [SignalROutput(HubName = "ChangeListenerHub")]
+    public SignalRMessageAction Run(
+        [ServiceBusTrigger("%QueueName%", Connection = "ServiceBusConnectionString")] ServiceBusReceivedMessage message)
+    {
+        var payload = message.Body.ToString();
+
+        _logger.LogInformation(
+            "Broadcasting Service Bus message {MessageId} from sequence {SequenceNumber}. Payload length: {PayloadLength}. Preview: {PayloadPreview}",
+            message.MessageId,
+            message.SequenceNumber,
+            payload.Length,
+            GetPayloadPreview(payload));
+
+        return new SignalRMessageAction("notify")
+        {
+            Arguments = [payload]
+        };
+    }
+
+    private static string GetPayloadPreview(string payload)
+    {
+        return payload.Length <= PayloadPreviewLength
+            ? payload
+            : string.Concat(payload.AsSpan(0, PayloadPreviewLength), "...");
     }
 }
