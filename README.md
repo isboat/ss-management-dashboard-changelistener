@@ -26,6 +26,25 @@ Azure Service Bus queue -> queueBroadcast function -> Azure SignalR Service -> d
 | --- | --- | --- |
 | `queueBroadcast` | Service Bus queue configured by `QueueName` | Broadcasts each queue message body to SignalR target `notify`. |
 | `negotiate` | Anonymous HTTP `POST` | Returns SignalR connection information for `ChangeListenerHub`. |
+| `health` | Anonymous HTTP `GET /api/health` | Checks Azure Storage, the configured Service Bus queue, and Azure SignalR Service. |
+
+## Health check
+
+`GET /api/health` returns HTTP `200` only when every dependency is available. It returns HTTP `503` when any check fails or the overall 10-second deadline expires. The JSON response includes the overall status, check time, and status and duration for every component:
+
+```json
+{
+  "status": "healthy",
+  "checkedAt": "2026-07-25T12:00:00+00:00",
+  "components": {
+    "azureStorage": { "status": "healthy", "description": null, "durationMilliseconds": 25 },
+    "serviceBus": { "status": "healthy", "description": null, "durationMilliseconds": 31 },
+    "azureSignalR": { "status": "healthy", "description": null, "durationMilliseconds": 18 }
+  }
+}
+```
+
+Dependency error details are logged but deliberately not returned, because Azure SDK errors may contain credentials. The endpoint is anonymous so a dashboard or platform probe can call it; use network access controls if dependency names themselves are sensitive.
 
 ## Required app settings
 
