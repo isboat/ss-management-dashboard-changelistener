@@ -40,12 +40,12 @@ public sealed class HealthCheckService
             await probe.CheckAsync(cancellationToken);
             return (probe.Name, new ComponentHealth(HealthStatus.Healthy, null, stopwatch.ElapsedMilliseconds));
         }
-        catch (Exception exception) when (exception is not OperationCanceledException || !cancellationToken.IsCancellationRequested)
+        catch (HealthProbeException exception)
         {
             _logger.LogWarning(exception, "Health check for {ComponentName} failed.", probe.Name);
             return (probe.Name, new ComponentHealth(
                 HealthStatus.Unhealthy,
-                Sanitize(exception.Message),
+                exception.Message,
                 stopwatch.ElapsedMilliseconds));
         }
         catch (OperationCanceledException)
@@ -55,11 +55,14 @@ public sealed class HealthCheckService
                 "The dependency check timed out.",
                 stopwatch.ElapsedMilliseconds));
         }
-    }
-
-    private static string Sanitize(string message)
-    {
-        // Azure SDK error messages can echo connection strings. Return a stable public message instead.
-        return string.IsNullOrWhiteSpace(message) ? "The dependency check failed." : "The dependency is unavailable or incorrectly configured.";
+        catch (Exception exception)
+        {
+            // Azure SDK exception messages can echo connection strings, so only log the original detail.
+            _logger.LogWarning(exception, "Health check for {ComponentName} failed.", probe.Name);
+            return (probe.Name, new ComponentHealth(
+                HealthStatus.Unhealthy,
+                "The dependency is unavailable.",
+                stopwatch.ElapsedMilliseconds));
+        }
     }
 }

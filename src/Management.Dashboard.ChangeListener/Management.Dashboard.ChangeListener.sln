@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Dashboard.ChangeListener", "Management.Dashboard.ChangeListener.csproj", "{70CB3445-507B-4EE0-A2E7-9C891F9E5D8A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Dashboard.ChangeListener.Tests", "..\..\tests\Management.Dashboard.ChangeListener.Tests\Management.Dashboard.ChangeListener.Tests.csproj", "{36AE2357-A0A2-4ED3-A072-ABD165E3BD94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{70CB3445-507B-4EE0-A2E7-9C891F9E5D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70CB3445-507B-4EE0-A2E7-9C891F9E5D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70CB3445-507B-4EE0-A2E7-9C891F9E5D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AE2357-A0A2-4ED3-A072-ABD165E3BD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AE2357-A0A2-4ED3-A072-ABD165E3BD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AE2357-A0A2-4ED3-A072-ABD165E3BD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AE2357-A0A2-4ED3-A072-ABD165E3BD94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

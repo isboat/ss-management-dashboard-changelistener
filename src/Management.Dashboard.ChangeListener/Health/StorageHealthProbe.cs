@@ -15,5 +15,5 @@ public sealed class StorageHealthProbe : IHealthProbe
 
     private static string GetRequiredSetting(string name) =>
         Environment.GetEnvironmentVariable(name)
-        ?? throw new InvalidOperationException($"Required setting '{name}' is missing.");
+        ?? throw new HealthProbeException($"Required setting '{name}' is missing.");
 }

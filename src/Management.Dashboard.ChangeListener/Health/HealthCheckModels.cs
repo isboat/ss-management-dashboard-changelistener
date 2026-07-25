@@ -3,13 +3,19 @@ using System.Text.Json.Serialization;
 namespace Management.Dashboard.ChangeListener.Health;
 
 public sealed record ComponentHealth(
+    [property: JsonPropertyName("status")]
     string Status,
+    [property: JsonPropertyName("description")]
     string? Description,
+    [property: JsonPropertyName("durationMilliseconds")]
     long DurationMilliseconds);
 
 public sealed record HealthCheckResponse(
+    [property: JsonPropertyName("status")]
     string Status,
+    [property: JsonPropertyName("checkedAt")]
     DateTimeOffset CheckedAt,
+    [property: JsonPropertyName("components")]
     IReadOnlyDictionary<string, ComponentHealth> Components)
 {
     [JsonIgnore]

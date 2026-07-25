@@ -15,7 +15,7 @@ public sealed class SignalRHealthProbe : IHealthProbe
     public async Task CheckAsync(CancellationToken cancellationToken)
     {
         var connectionString = Environment.GetEnvironmentVariable("AzureSignalRConnectionString")
-            ?? throw new InvalidOperationException("Required setting 'AzureSignalRConnectionString' is missing.");
+            ?? throw new HealthProbeException("Required setting 'AzureSignalRConnectionString' is missing.");
         var endpoint = ParseEndpoint(connectionString);
         var healthEndpoint = new Uri(endpoint, "/api/health");
 
@@ -32,6 +32,6 @@ public sealed class SignalRHealthProbe : IHealthProbe
 
         return Uri.TryCreate(value, UriKind.Absolute, out var endpoint)
             ? endpoint
-            : throw new InvalidOperationException("The Azure SignalR connection string has no valid endpoint.");
+            : throw new HealthProbeException("The Azure SignalR connection string has no valid endpoint.");
     }
 }

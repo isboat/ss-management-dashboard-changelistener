@@ -14,11 +14,11 @@ public sealed class ServiceBusHealthProbe : IHealthProbe
 
         if (!await client.QueueExistsAsync(queueName, cancellationToken))
         {
-            throw new InvalidOperationException("The configured Service Bus queue does not exist.");
+            throw new HealthProbeException("The configured Service Bus queue does not exist.");
         }
     }
 
     private static string GetRequiredSetting(string name) =>
         Environment.GetEnvironmentVariable(name)
-        ?? throw new InvalidOperationException($"Required setting '{name}' is missing.");
+        ?? throw new HealthProbeException($"Required setting '{name}' is missing.");
 }
